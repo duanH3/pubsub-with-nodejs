@@ -21,12 +21,14 @@ Step 2. Create key.json from Service account
 
 Step 3. Create container with docker
 ---------------
-1) docker build -t duan-node-app .
-2) docker images //get img-id:			> 2debc979fbc8
-3) docker container create 2debc979fbc8 	> 0c372a3a17cecacda81ee8746611461aab5bf5161a512519fceb63d232adc5bd
-4) docker ps -a //get container id		> 0c372a3a17ce   
-5) docker commit 0c372a3a17ce duan-phx-node:version1						>//commint to container registry
-6) docker tag duan-phx-node:version1 asia.gcr.io/grp1-implementation/phx-mdh-repo:version1	>prep push to registry
+1) docker build -t [APP-NAME] .
+2) docker images    
+3) docker container create [IMAGE-ID]
+4) docker ps -a    
+5) docker commit [CONTAINER-ID] [ANY-CONTAINER-NAME]:version1
+6) docker tag [ANY-CONTAINER-NAME]:version1 asia.gcr.io/grp1-implementation/phx-mdh-repo:version1
 7) docker push asia.gcr.io/grp1-implementation/phx-mdh-repo:version1
 
-
+Step 4. Deploy from Container Registry
+---------------
+- click on the 3 dots
