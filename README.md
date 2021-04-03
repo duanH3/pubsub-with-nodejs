@@ -9,8 +9,8 @@ Node.js deployment to GKE
 
 Step 0. Setup pubsub in GCP, Setup Tables in BQ, Setup Dataflow
 --------------
-- Create Topic in GCP
-- Modify "topic" in app.js
+- Create Topic in GCP pubsub
+- Modify "topic" in app.js to be the same with pubsub
 - Modify "payload" in app.js to be the same with BQ table
 
 Step 1. Go to cloud-shell and clone this repo. Install the dependencies.
