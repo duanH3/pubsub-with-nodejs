@@ -4,11 +4,10 @@ Node.js deployment to GKE
 - app.js        - simulate server code > execute GET request and sent data to "pubsub"
 - package.json  - setup file to install node dependencies (files necessary to connect to GCP/pubsub)
 - Dockerfile    - config file user by docker to convert node.js app code into deployable containers
-- key.json      - identity file to authenticate with pubsub (create service account, give pubsub publisher permission, download the json key and save as key.json together with     app.js folder)
+- key.json      - identity file to authenticate with pubsub (create service account, give pubsub publisher permission, download the json key and save as key.json together with     app.js file)
 
-Pre-requisites
+Go to cloud-shell and clone this repo
 --------------
-
 - Android SDK v23
 - Android Build Tools v23.0.2
 - Android Support Repository
