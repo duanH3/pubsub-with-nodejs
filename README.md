@@ -29,6 +29,12 @@ Step 3. Create container with docker
 6) docker tag [ANY-CONTAINER-NAME]:version1 asia.gcr.io/grp1-implementation/phx-mdh-repo:version1
 7) docker push asia.gcr.io/grp1-implementation/phx-mdh-repo:version1
 
-Step 4. Deploy from Container Registry
+Step 4. Create GKE Cluster
 ---------------
-- click on the 3 dots
+- Create GKE cluster with access to all cloud APIs or single API
+
+Step 5. Deploy from Container Registry
+---------------
+- click on the 3 dots, deploy to GKE
+- Expose & get ext ip address
+- Test server 
