@@ -19,7 +19,7 @@ Step 2. Create key.json from Service account
 - type command in cloud shell to start server: node app
 - test the server by clicking webpreview. test the stream by replacing "/?authuser=0" with "/stream"
 
-Step 3. Create container with docker
+Step 3. Create container with docker and push commit to Container Registry
 ---------------
 1) docker build -t [APP-NAME] .
 2) docker images    
