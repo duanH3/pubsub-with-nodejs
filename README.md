@@ -7,14 +7,15 @@ Node.js deployment to GKE
 - key.json      - identity file to authenticate with pubsub (create service account, give pubsub publisher permission, download the json key and save as key.json together with     app.js file)
 - views folder  - index.html, stream.html is return when GET request calls for "ip:8080/" & "ip:8080/stream"
 
-Go to cloud-shell and clone this repo
+Step 1. Go to cloud-shell and clone this repo. Install the dependencies.
 --------------
-- Android SDK v23
-- Android Build Tools v23.0.2
-- Android Support Repository
+- git clone https://github.com/duanH3/pubsub-with-nodejs.git
+- cd pubsub-with-nodejs
+- npm install
 
-Getting Started
+Step 2. Test if server is working. Type:
 ---------------
+- node app - The app should run using compute engine.
 
 This sample uses the Gradle build system. 
 
