@@ -30,6 +30,7 @@ Step 3. Create container with docker and push commit to Container Registry
 7) docker push asia.gcr.io/grp1-implementation/phx-mdh-repo:version1
 - phx-mdh-repo is the [Container registry Name]
 - asia.gcr.io is CR in asia
+- grp1-implementation is your [PROJECT-ID]
 
 Step 4. Create GKE Cluster
 ---------------
