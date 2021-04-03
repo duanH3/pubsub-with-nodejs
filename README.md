@@ -1,23 +1,6 @@
-Google Places API for Android Samples
+Node.js deployment to GKE
 ===================================
 
-Samples that use the [Google Places API for Android](https://developers.google.com/places/android/).
-
-This repo contains the following samples:
-
-1. [PlacePicker](https://github.com/googlesamples/android-play-places/tree/master/PlacePicker): 
-Uses the [PlacePicker widget](https://developers.google.com/places/android/placepicker)
-and the [Geo Data API](https://developers.google.com/places/android/place-details)
-to select a place and retrieve its details.
-2. [PlaceCompleteActivity](https://github.com/googlesamples/android-play-places/tree/master/PlaceCompleteActivity):
-Uses an Intent to open a fullscreen autocomplete widget from the
-[Place Autocomplete API].
-3. [PlaceCompleteFragment](https://github.com/googlesamples/android-play-places/tree/master/PlaceCompleteFragment):
-Uses a widget (PlaceAutocompleteFragment) provided by the
-[Place Autocomplete API] to display autocomplete suggestions.
-4. [PlaceCompleteAdapter](https://github.com/googlesamples/android-play-places/tree/master/PlaceCompleteAdapter):
-Implements an Android AutoCompleteTextView backed by the
-[Place Autocomplete API].
 
 Note that each folder contains a distinct sample and must be imported separately.
 
