@@ -7,6 +7,12 @@ Node.js deployment to GKE
 - key.json      - identity file to authenticate with pubsub (create service account, give pubsub publisher permission, download the json key and save as key.json together with     app.js file)
 - views folder  - index.html, stream.html is return when GET request calls for "ip:8080/" & "ip:8080/stream"
 
+Step 0. Setup pubsub in GCP, Setup Tables in BQ, Setup Dataflow
+--------------
+- Create Topic in GCP
+- Modify "topic" in app.js
+- Modify "payload" in app.js to be the same with BQ table
+
 Step 1. Go to cloud-shell and clone this repo. Install the dependencies.
 --------------
 - git clone https://github.com/duanH3/pubsub-with-nodejs.git
