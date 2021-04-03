@@ -13,54 +13,20 @@ Step 1. Go to cloud-shell and clone this repo. Install the dependencies.
 - cd pubsub-with-nodejs
 - npm install
 
-Step 2. Test if server is working. Type:
+Step 2. Create key.json from Service account
 ---------------
-- node app      //The app should run using compute engine.
+- save key.json in the same director along with app.js
+- type command in cloud shell to start server: node app
+- test the server by clicking webpreview. test the stream by replacing "/?authuser=0" with "/stream"
 
-This sample uses the Gradle build system. 
+Step 3. Create container with docker
+---------------
+1) docker build -t duan-node-app .
+2) docker images //get img-id:			> 2debc979fbc8
+3) docker container create 2debc979fbc8 	> 0c372a3a17cecacda81ee8746611461aab5bf5161a512519fceb63d232adc5bd
+4) docker ps -a //get container id		> 0c372a3a17ce   
+5) docker commit 0c372a3a17ce duan-phx-node:version1						>//commint to container registry
+6) docker tag duan-phx-node:version1 asia.gcr.io/grp1-implementation/phx-mdh-repo:version1	>prep push to registry
+7) docker push asia.gcr.io/grp1-implementation/phx-mdh-repo:version1
 
-First download the samples by cloning this repository or downloading an archived
-snapshot. (See the options on the right hand side.)
 
-In Android Studio, use the "Import non-Android Studio project" or 
-"Import Project" option. Next select one of the sample directories
-("PlacePicker" or "PlaceComplete").  If prompted for a gradle configuration
-accept the default settings. 
-
-Alternatively use the "gradlew build" command to build the project directly.
-
-Don't forget to add your API key to the AndroidManifest.xml. 
-(See https://developers.google.com/places/android/signup)
-
-Support
--------
-
-- Stack Overflow: http://stackoverflow.com/questions/tagged/google-play-services
-
-If you've found an error in these samples, please file an issue:
-https://github.com/googlesamples/android-play-places/issues
-
-Patches are encouraged, and may be submitted according to the instructions in
-CONTRIBUTING.md.
-
-License
--------
-
-Copyright 2015 Google, Inc.
-
-Licensed to the Apache Software Foundation (ASF) under one or more contributor
-license agreements.  See the NOTICE file distributed with this work for
-additional information regarding copyright ownership.  The ASF licenses this
-file to you under the Apache License, Version 2.0 (the "License"); you may not
-use this file except in compliance with the License.  You may obtain a copy of
-the License at
-
-  http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
-License for the specific language governing permissions and limitations under
-the License.
-
-[Place Autocomplete API]: <https://developers.google.com/places/android/autocomplete>
