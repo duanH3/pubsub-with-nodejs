@@ -15,7 +15,7 @@ Step 1. Go to cloud-shell and clone this repo. Install the dependencies.
 
 Step 2. Test if server is working. Type:
 ---------------
-- node app - The app should run using compute engine.
+- node app      //The app should run using compute engine.
 
 This sample uses the Gradle build system. 
 
