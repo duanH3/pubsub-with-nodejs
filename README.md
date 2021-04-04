@@ -11,7 +11,8 @@ Step 0. Setup pubsub in GCP, Setup Tables in BQ, Setup Dataflow
 --------------
 - Create Topic in GCP pubsub
 - Modify "topic" in app.js to be the same with pubsub
-- Modify "payload" in app.js to be the same with BQ table
+- Modify "payload" in app.js to be the same with BQ table 
+- e.g. JSON message >> {"message":"Hello world"} || Table Field name >> message STRING
 
 Step 1. Go to cloud-shell and clone this repo. Install the dependencies.
 --------------
