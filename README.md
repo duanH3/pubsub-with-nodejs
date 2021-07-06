@@ -59,6 +59,6 @@ BigQuery
 ---------------
 - BigQuery output table: [project_name:dataset.tablename] grp1-implementation:phx_dataflow_sql.phx_ps_df_messages
 - Temporary location: gs://storage_name/tmp
-- Perform SQL query in BQ to test
+- Perform SQL query in BQ to test or export data directly to Datastudio.
 - SELECT gameItemID, COUNT(*) AS records FROM 'project_name.dataset_name.gamestream_tablename'
 GROUP BY gameItemID ORDER BY records DESC
