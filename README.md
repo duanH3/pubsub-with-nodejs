@@ -1,4 +1,4 @@
-Pub/Sub Node.js deployment to GKE -> Dataflow -> BigQuery
+Pub/Sub Node.js deployment to GKE. Simulate passing of data from GKE.App -> Dataflow -> BigQuery
 ===================================
 
 - app.js        - simulate server code > execute GET request and sent simulate data to "pubsub"
@@ -52,12 +52,12 @@ Step 5. Deploy from Container Registry
 Dataflow setup
 ---------------
 - Dataset ID [project_name:dataset] project_name:phx_dataflow_sql
-- BigQuery output table: [project_name:dataset.tablename] project_name:phx_dataflow_sql.phx_ps_df_messages
+- BigQuery output table: [project_name:dataset.tablename] e.g. project_name:phx_dataflow_sql.phx_ps_df_messages
 - setup storage:	gs://storage_name
 
 BigQuery
 ---------------
-- BigQuery output table: [project_name:dataset.tablename] grp1-implementation:phx_dataflow_sql.phx_ps_df_messages
+- BigQuery output table: [project_name:dataset.tablename] e.g. project_name:phx_dataflow_sql.phx_ps_df_messages
 - Temporary location: gs://storage_name/tmp
 - Perform SQL query in BQ to test or export data directly to Datastudio.
 - SELECT gameItemID, COUNT(*) AS records FROM 'project_name.dataset_name.gamestream_tablename'
