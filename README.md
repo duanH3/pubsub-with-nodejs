@@ -1,4 +1,4 @@
-Node.js deployment to GKE
+Pub/Sub Node.js deployment to GKE -> Dataflow -> BigQuery
 ===================================
 
 - app.js        - simulate server code > execute GET request and sent simulate data to "pubsub"
@@ -48,3 +48,14 @@ Step 5. Deploy from Container Registry
 - click on the 3 dots, deploy to GKE
 - Expose & get ext ip address
 - Test server 
+
+Dataflow setup
+---------------
+- Dataset ID [project_name:dataset] project_name:phx_dataflow_sql
+- BigQuery output table: [project_name:dataset.tablename] project_name:phx_dataflow_sql.phx_ps_df_messages
+- setup storage:	gs://storage_name
+
+BigQuery
+---------------
+BigQuery output table: [project_name:dataset.tablename] grp1-implementation:phx_dataflow_sql.phx_ps_df_messages
+temporary location: gs://storage_name/tmp
