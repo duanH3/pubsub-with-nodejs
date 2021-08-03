@@ -1,6 +1,6 @@
 Pub/Sub Node.js deployment to GKE. Simulate passing of data from GKE.App -> Dataflow -> BigQuery
 ===================================
-use cases: 
+Pub/Sub use cases: 
 1) Real time triage incidents quickly. e.g detect unwanted firewall change or server breach is detected
 2) Real time gathering and transforming users data. Insert the data into BigQuery for analysis
 3) Create any topic for push/pull notification
