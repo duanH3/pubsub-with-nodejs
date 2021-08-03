@@ -3,6 +3,7 @@ Pub/Sub Node.js deployment to GKE. Simulate passing of data from GKE.App -> Data
 use cases: 
 1) Real time triage incidents quickly. e.g detect unwanted firewall change or server breach is detected
 2) Real time gathering and transforming users data. Insert the data into BigQuery for analysis
+3) Create any topic for push/pull notification
 
 - app.js        - simulate server code > execute GET request and sent simulate data to "pubsub"
 - package.json  - setup file to install node dependencies (files necessary to connect to GCP/pubsub)
